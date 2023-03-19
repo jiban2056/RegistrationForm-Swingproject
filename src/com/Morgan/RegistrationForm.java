@@ -103,7 +103,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         constraints.gridy = 5;
         panel.add(submitButton, constraints);              // submit button
 
-        constraints.gridx = 1;
+        constraints.gridy = 6;
         panel.add(resetButton, constraints);              // reset button
 
         // Add the panel to the frame
@@ -121,10 +121,22 @@ public class RegistrationForm extends JFrame implements ActionListener {
             String email = emailTextField.getText();
             String password = new String(passwordField.getPassword());
             String interests = interestTextArea.getText();
-            System.out.println("Name: " + name);
-            System.out.println("Email: " + email);
-            System.out.println("Password: " + password);
-            System.out.println("Interests: " + interests);
+            String gender = "";
+
+            if (maleRadioButton.isSelected()) {
+                gender = "Male";
+            } else if (femaleRadioButton.isSelected()) {
+                gender = "Female";
+            } else if (otherRadioButton.isSelected()) {
+                gender = "Other";
+            }
+
+            JOptionPane.showMessageDialog(this, "Name: " + name + "\nEmail: " + email +
+                    "\nPassword: " + password + "\nInterest:" + interests + "\nGender: " + gender);
+//            System.out.println("Name: " + name);
+//            System.out.println("Email: " + email);
+//            System.out.println("Password: " + password);
+//            System.out.println("Interests: " + interests);
         } else if (e.getSource() == resetButton) {
             // Handle the reset button click
             nameTextField.setText("");
@@ -142,4 +154,6 @@ public class RegistrationForm extends JFrame implements ActionListener {
 }
 
 // 2aqcp5m  class cde
+
+// jiban2056
 
