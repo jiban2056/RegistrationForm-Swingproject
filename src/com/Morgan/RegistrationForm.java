@@ -29,7 +29,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
         emailLabel = new JLabel("Email:");
         passwordLabel = new JLabel("Password:");
         interestLabel = new JLabel("Interests:");
-
+        genderLabel = new JLabel("Gender");
         // Create the text fields
         nameTextField = new JTextField(20);
         emailTextField = new JTextField(20);
@@ -99,14 +99,12 @@ public class RegistrationForm extends JFrame implements ActionListener {
         genderPanel.add(otherRadioButton);
         panel.add(genderPanel, constraints);
 
-        constraints.gridx = 0;
-        constraints.gridy = 4;
+        constraints.gridx = 1;
+        constraints.gridy = 5;
         panel.add(submitButton, constraints);              // submit button
 
         constraints.gridx = 1;
         panel.add(resetButton, constraints);              // reset button
-
-
 
         // Add the panel to the frame
         add(panel);
@@ -137,7 +135,11 @@ public class RegistrationForm extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
+
         new RegistrationForm();
     }
 
 }
+
+// 2aqcp5m  class cde
+

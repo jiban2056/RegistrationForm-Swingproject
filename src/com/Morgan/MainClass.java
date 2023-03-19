@@ -8,7 +8,6 @@ public class MainClass
 {
 
     JFrame frame;
-
     Container container;
 
     MainClass(){
@@ -18,10 +17,10 @@ public class MainClass
         container = frame.getContentPane();
     }
 
-public static void  main(String[]args)
+public static void main(String[]args)
 {
-
     new MainClass();
 }
 }
+
 
