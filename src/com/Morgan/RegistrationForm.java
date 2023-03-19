@@ -132,7 +132,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
             }
 
             JOptionPane.showMessageDialog(this, "Name: " + name + "\nEmail: " + email +
-                    "\nPassword: " + password + "\nInterest:" + interests + "\nGender: " + gender);
+                    "\nPassword: " + password + "\nInterest: " + interests + "\nGender: " + gender);
 //            System.out.println("Name: " + name);
 //            System.out.println("Email: " + email);
 //            System.out.println("Password: " + password);
