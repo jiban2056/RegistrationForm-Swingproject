@@ -11,20 +11,22 @@ public class RegistrationForm extends JFrame implements ActionListener {
     JPasswordField passwordField;
     JTextArea interestTextArea;
     JScrollPane interestScrollPane;
-
     JRadioButton maleRadioButton, femaleRadioButton, otherRadioButton;
     ButtonGroup genderButtonGroup;
     JButton submitButton, resetButton;
+
 
     public RegistrationForm() {
         // Set up the frame
         super("Registration Form");
 //        setTitle("Registration Form");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(500, 400);
         setLocationRelativeTo(null);
 
-        // Create the labels
+
+
+    // Create the labels
         nameLabel = new JLabel("Name:");
         emailLabel = new JLabel("Email:");
         passwordLabel = new JLabel("Password:");
@@ -145,6 +147,7 @@ public class RegistrationForm extends JFrame implements ActionListener {
             interestTextArea.setText("");
         }
     }
+
 
     public static void main(String[] args) {
 
